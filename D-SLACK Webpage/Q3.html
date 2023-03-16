@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="Q3new.css">
+  <style>
+    body {
+      background-image: linear-gradient(rgb(26, 23, 17), rgb(58, 55, 45));
+      background-repeat: no-repeat;
+      background-attachment: fixed;  
+      background-size: cover;
+      overflow-y: hidden;
+      
+    }
+
+    .navigation{
+      position: sticky;
+      top: 0;
+      z-index: 1;
+    }
+
+    
+  </style>
+ <meta charset="utf-8"> 
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>D-SLACK</title>
+ <link rel="stylesheet" href="new.css">
+</head>
+<body>
+
+  <!-- Navigation Bar code -->
+
+  <nav class="navigation">
+    <div class="Logo">
+      <img src="New D-SLACK ICON-Color.png" alt="D-SLACK" width= "90" height="90">
+    </div>
+    <ul class="nav-links">
+      <li><a href="./index.html">Home</a></li>
+      <li class="dropdown"><a href="#">Our Content</a>
+        <ul class="dropdown-menu">
+          <li><a href="./index.html#Content">Content</a></li>
+          <li><a href="#">Quarter 3</a></li>
+          <li><a href="#">Quarter 4</a></li>
+        </ul>
+      </li>
+      <li><a href="#About">About Us</a></li>
+      <li><a href="#Contact">Contact Us</a></li>
+      <li><a href="#Events">Our Events</a></li>
+    </ul>
+   
+    <!-- Javascript drop down code -->
+
+    <script>
+      const dropdowns = document.querySelectorAll(".dropdown");
+      dropdowns.forEach((dropdown) => {
+        const dropdownMenu = dropdown.querySelector(".dropdown-menu");
+        dropdown.addEventListener("click", () => {
+          dropdown.classList.toggle("show");
+        });
+      });
+    </script>
+    
+   
+    <div class="burger">
+      <div class="line 1"></div>
+      <div class="line 2"></div>
+      <div class="line 3"></div>
+    </div>
+  </nav>
+  
+  <!-- Parallax  Effect -->
+
+  <div class="wrapper">
+
+   <header id="Home" class="parallax">
+    <img src="Mountain.png" class="BackgroundX">
+    <img src="Quarter 3 Fore.png" class="ForegroundY">
+   </header>
+
+   <section>
+    <h2 id="Content" class="Stream-Layout">Stream Outline & Layout</h2>
+    
+    <img class="Present" src="Stream_Outline.png" height="180" width="240">
+    <img class="Present" src="Streaming_Layout.png" height="180" width="310">
+    
+   </section>
+
+   <div class="parallax2">
+    
+   </div>
+
+   <section>
+   <h1 id="About" class="About-Us">Slide Presentation</h1>
+   <p class="Description">
+    Here is our Slide Presentation:
+   </p>
+
+   <iframe class="Slides" src="https://docs.google.com/presentation/d/e/2PACX-1vSdwmCvbXQwOcQ7a4suVCjv9YyKf-HAHCrqNN0YQxh4EOjdjYSUQmJV-OlaVXShylWKWSGtvzqPQfMt/embed?start=false&loop=false&delayms=3000" frameborder="0" width="100%" height="700" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+   
+   </section>
+
+
+   <div class="parallax2">
+    
+   </div>
+
+   <section>
+    <h1 id="Contact" class="About-Us">Contact Us</h1>
+    <div class="Description2">
+      Here are the emails of each member of the group for you to reach us out faster:
+    </div>
+    <div class="Description2">
+       <br>       
+    </div>
+    <div class="Description2">
+      Daniel Antivo - ap.daniel.antivo@apecschools.edu.ph
+    </div>
+    <div class="Description2">
+      Sophia Soriano - ap.sophia.soriano@apecschools.edu.ph
+    </div>
+    <div class="Description2">
+      Lyka Sonday - ap.angellyka.sonday@apecschools.edu.ph
+    </div>
+    <div class="Description2">
+      Aisha Garingo - ap.aishamae.garingo@apecschools.edu.ph
+    </div>
+    <div class="Description2">
+      CJ Masbad - ap.cristopherjames.masbad@apecschools.edu.ph
+    </div>
+    <div class="Description2">
+      Kyle Espinosa - ap.kylejohn.espinosa@apecshools.edu.ph
+    </div>
+
+    </section>
+  </div>
+  
+
+</body>
+</html>
